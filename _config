@@ -1,0 +1,12 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+
+theme: jekyll-theme-hacker
+
+title: mcdocwatch
+description: Keep an eye on Microsoft documentation.
