@@ -4,6 +4,7 @@
 $pumpkin: #FF6200;
 $header: $pumpkin;
 $th: $pumpkin;
+$hr: $pumpkin;
 
 @import "{{ site.theme }}";
 
@@ -17,4 +18,9 @@ header h1 {
 
 th {
   border-bottom: 1px dashed $pumpkin;
+}
+
+hr {
+  border-bottom: 1px dashed $pumpkin;
+  color: $pumpkin;
 }
