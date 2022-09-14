@@ -68,10 +68,10 @@ create your own badge or RSS link to other articles.
 
 ## create badge to specific GitHub file
 
-1. Go to doc [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
-2. Go to doc on GitHub [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
-3. Create link to doc GitHub API to get document details [https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/azure-arc/servers/agent-release-notes.md](https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/azure-arc/servers/agent-release-notes.md)
-4. Create link in URL encoded form `https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md` using, e.g., [https://www.url-encode-decode.com](https://www.url-encode-decode.com)
+1. Go to Microsoft's article, e.g., [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
+2. Open source of this article from GitHub [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
+3. Take path of article source file `articles/azure-arc/servers/agent-release-notes.md` and create link to using GitHub API to get document details [https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/azure-arc/servers/agent-release-notes.md](https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/azure-arc/servers/agent-release-notes.md)
+4. Convert address from point 3 to URL encoded using, e.g., [https://www.url-encode-decode.com](https://www.url-encode-decode.com) to `https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md` 
 5. Create badge using URL encoded address 
 
 ```
@@ -82,9 +82,9 @@ create your own badge or RSS link to other articles.
 
 ## create RSS link to specific article page
 
-1. Go to doc [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
+1. Go to Microsoft's article, e.g., [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
    
-2. Take Article title and document type specified in line below the title.
+2. Take article title and document type specified in line below the title.
 
 ```
 What's new with Azure Arc-enabled servers agent
@@ -93,9 +93,9 @@ Article
 
 3. Change content from second step to URL encoded text using, e.g., [https://www.url-encode-decode.com](https://www.url-encode-decode.com) from `What's new with Azure Arc-enabled servers agent Article` to `What%27s+new+with+Azure+Arc-enabled+servers+agent+Article`
 
-4. Use URL encoded text in search: [https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us](https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us)
+4. Use URL encoded text in search address: [https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us](https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us)
 
-5. Use this address in your RSS feed reader to be notified each time when document is updated.
+5. Add address from point 4 to your RSS feed reader to be notified each time when document is updated.
 
 ---
 
