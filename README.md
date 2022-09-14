@@ -96,7 +96,3 @@ Article
 4. Use URL encoded text in search address: [https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us](https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us)
 
 5. Add address from point 4 to your RSS feed reader to be notified each time when document is updated.
-
----
-
-{{ 'now' | date: "%Y-%m-%d %H:%M:%S %Z" }}
