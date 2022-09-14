@@ -1,4 +1,4 @@
-# Microsfot Products Release Notes
+# Microsoft products' Release Notes
 
 ## Microsoft Defender for Cloud
 
