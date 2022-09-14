@@ -1,5 +1,7 @@
 # Microsoft products' Release Notes
 
+> Refresh page if you see `invalid` for any of badge.
+
 ## Microsoft Defender for Cloud
 
 Article name|Links|Badges
@@ -57,5 +59,41 @@ Article name|Links|Badges
 Article name|Links|Badges
 -|-|-
 [Log Analytics virtual machine extension for Windows](https://docs.microsoft.com/en-gb/azure/virtual-machines/extensions/oms-windows?toc=%2Fazure%2Fazure-monitor%2Ftoc.json)|[src](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-machines/extensions/oms-windows.md), [API](https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/virtual-machines/extensions/oms-windows.md), [RSS](https://docs.microsoft.com/api/search/rss?search=%22Log+Analytics+virtual+machine+extension+for+Windows+Article%22&locale=en-us)|[![Creation](https://img.shields.io/badge/dynamic/json?style=social&label=Creation&query=%24%5B-1%3A%5D.commit.author.date&suffix=%20UTC&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fvirtual-machines%2Fextensions%2Foms-windows.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-machines/extensions/oms-windows.md)<br>[![Modification](https://img.shields.io/badge/dynamic/json?style=social&label=Modification&query=%24%5B0%5D.commit.author.date&suffix=%20UTC&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fvirtual-machines%2Fextensions%2Foms-windows.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-machines/extensions/oms-windows.md)<br>[![Comment](https://img.shields.io/badge/dynamic/json?style=social&label=Comment&query=%24%5B0%5D.commit.message&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fvirtual-machines%2Fextensions%2Foms-windows.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-machines/extensions/oms-windows.md)
+
+---
+
+# How to 
+
+## create badge to specific GitHub file
+
+1. Go to doc https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes
+2. Go to doc on GitHub https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md
+3. Create link to doc GitHub API to get document details https://api.github.com/repos/MicrosoftDocs/azure-docs/commits?path=articles/azure-arc/servers/agent-release-notes.md
+4. Create link in URL encoded form `https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md` using, e.g., https://www.url-encode-decode.com
+5. Create badge using URL encoded address 
+
+```
+[![Modification](https://img.shields.io/badge/dynamic/json?style=social&label=Modification&query=%24%5B0%5D.commit.author.date&suffix=%20UTC&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
+```
+
+[![Modification](https://img.shields.io/badge/dynamic/json?style=social&label=Modification&query=%24%5B0%5D.commit.author.date&suffix=%20UTC&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
+
+## create RSS link to specific article page
+
+1. Go to doc https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes
+2. Take Article title and document type specified in line below the title.
+
+```
+What's new with Azure Arc-enabled servers agent
+Article
+```
+
+3. Change content from second step to URL encoded text using, e.g., https://www.url-encode-decode.com from `What's new with Azure Arc-enabled servers agent Article` to `What%27s+new+with+Azure+Arc-enabled+servers+agent+Article`
+
+4. Use URL encoded text in search: https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+Azure+Arc-enabled+servers+agent+Article%22&locale=en-us
+
+5. Use this address in your RSS feed reader to be notified each time when document is updated.
+
+---
 
 {{ 'now' | date: "%Y-%m-%d %H:%M:%S %Z" }}
