@@ -6,7 +6,7 @@ relative_links:
 include:
   - README.md
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
 
 title: msdocwatch
 description: Keep an eye on Microsoft documentation.

@@ -97,3 +97,5 @@ Article
 
 5. Add address from point 4 to your RSS feed reader to be notified each time when document is updated.
 
+---
+Generated on {{ 'now' | date: "%Y-%m-%d %H:%M:%S %Z" }}
