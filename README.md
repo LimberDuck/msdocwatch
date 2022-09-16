@@ -1,6 +1,6 @@
-# Microsoft products' Release Notes
+# msdocwatch
 
-> Refresh page if you see `invalid` for any of badge.
+Check Microsoft products' Release Notes. Refresh page if you see `invalid` for any of badge.
 
 ## Microsoft Defender for Cloud
 
@@ -64,9 +64,12 @@ Article name|Links|Badges
 
 # How to 
 
-create your own badge or RSS link to other articles.
+## check latest update
 
-## create badge to specific GitHub file
+1. Visit this page.
+2. Add RSS links listed above to your RSS reader.
+
+## create your own badge to specific GitHub file
 
 1. Go to Microsoft's article, e.g., [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
 2. Open source of this article from GitHub [https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
@@ -80,7 +83,7 @@ create your own badge or RSS link to other articles.
 
 [![Modification](https://img.shields.io/badge/dynamic/json?style=social&label=Modification&query=%24%5B0%5D.commit.author.date&suffix=%20UTC&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMicrosoftDocs%2Fazure-docs%2Fcommits%3Fpath%3Darticles%2Fazure-arc%2Fservers%2Fagent-release-notes.md)](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-arc/servers/agent-release-notes.md)
 
-## create RSS link to specific article page
+## create your own RSS link to different Microsoft's article pages
 
 1. Go to Microsoft's article, e.g., [https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes](https://docs.microsoft.com/en-us/azure/azure-arc/servers/agent-release-notes)
    
